@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Spice Restaurant | Luxury Fine Dining in Dubai, UAE</title>
+<meta name="description" content="Royal Spice Restaurant — experience the royal taste. Ultra-premium Indian, Chinese &amp; Continental fine dining in Dubai, UAE. Book your table today.">
+<meta name="keywords" content="Royal Spice, luxury restaurant Dubai, fine dining UAE, Indian restaurant Dubai, biryani Dubai">
+<meta property="og:title" content="Royal Spice Restaurant | Experience The Royal Taste">
+<meta property="og:description" content="Ultra-premium fine dining in Dubai, UAE.">
+<meta property="og:type" content="restaurant.restaurant">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= Loader ================= -->
+<div class="loader" id="loader">
+  <div class="loader-crest">
+    <svg viewBox="0 0 120 120" class="crest-svg">
+      <path class="crest-crown" d="M30 46 L38 26 L50 42 L60 20 L70 42 L82 26 L90 46 Z"/>
+      <circle cx="60" cy="66" r="30" class="crest-circle"/>
+      <text x="60" y="75" class="crest-letters">RS</text>
+    </svg>
+  </div>
+  <p class="loader-text">ROYAL SPICE</p>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ================= Cursor Glow ================= -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ================= Navbar ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <svg viewBox="0 0 120 120" class="brand-crest">
+        <path class="crest-crown" d="M30 46 L38 26 L50 42 L60 20 L70 42 L82 26 L90 46 Z"/>
+        <circle cx="60" cy="66" r="30" class="crest-circle"/>
+        <text x="60" y="75" class="crest-letters">RS</text>
+      </svg>
+      <span class="brand-text">Royal <em>Spice</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#chef" class="nav-link">Chef</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#reservation" class="nav-link">Reservation</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#reservation" class="btn btn-gold nav-cta ripple">Book a Table</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#menu" class="mobile-link">Menu</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#chef" class="mobile-link">Chef</a>
+    <a href="#reviews" class="mobile-link">Reviews</a>
+    <a href="#reservation" class="mobile-link">Reservation</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+  <a href="#reservation" class="btn btn-gold mobile-cta ripple">Book a Table</a>
+</div>
+
+<!-- ================= Hero ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1920&auto=format&fit=crop" alt="Royal Spice luxury dining hall in Dubai">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <svg viewBox="0 0 120 120" class="hero-crest fade-up" data-delay="0">
+      <path class="crest-crown" d="M30 46 L38 26 L50 42 L60 20 L70 42 L82 26 L90 46 Z"/>
+      <circle cx="60" cy="66" r="30" class="crest-circle"/>
+      <text x="60" y="75" class="crest-letters">RS</text>
+    </svg>
+
+    <h1 class="hero-title">
+      <span class="fade-up" data-delay="1">Royal Spice</span>
+    </h1>
+    <p class="hero-subtitle fade-up" data-delay="2">Restaurant</p>
+    <p class="hero-tagline fade-up" data-delay="3">Experience the Royal Taste</p>
+
+    <div class="hero-badges fade-up" data-delay="4">
+      <div class="badge"><i class="fa-solid fa-utensils"></i><span>Fine Dining</span></div>
+      <div class="badge"><i class="fa-solid fa-leaf"></i><span>Premium Ingredients</span></div>
+      <div class="badge"><i class="fa-solid fa-hat-chef"></i><span>Expert Chefs</span></div>
+      <div class="badge"><i class="fa-solid fa-chair"></i><span>Luxury Ambience</span></div>
+    </div>
+
+    <div class="hero-actions fade-up" data-delay="5">
+      <a href="#menu" class="btn btn-gold ripple">View Menu</a>
+      <a href="#reservation" class="btn btn-glass ripple">Book a Table</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+    <span class="scroll-label">SCROLL</span>
+  </a>
+</section>
+
+<!-- ================= About ================= -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal" data-anim="left">
+      <div class="glass-frame">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop" alt="Royal Spice chef plating a signature dish">
+      </div>
+      <div class="floating-card reveal" data-anim="up" data-delay="2">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <strong>15+ Years</strong>
+          <span>Of Culinary Excellence</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-copy reveal" data-anim="right">
+      <p class="eyebrow"><i class="fa-solid fa-crown"></i> About Us</p>
+      <h2 class="section-title">A Legacy of <span class="text-gold">Royal Flavor</span> in the Heart of Dubai</h2>
+      <p class="about-text">Royal Spice Restaurant brings together the richness of Indian royal kitchens, the finesse of Chinese wok mastery, and the warmth of Continental comfort food &mdash; plated in an atmosphere of quiet, gilded luxury.</p>
+      <p class="about-text">Every dish is prepared with premium, hand-selected ingredients, slow-cooked traditions, and a level of craft that turns a meal into an occasion. From our hand-tied naans to our dum-sealed biryanis, nothing leaves our kitchen without the chef's personal approval.</p>
+
+      <ul class="about-points">
+        <li><i class="fa-solid fa-circle-check"></i> Best Quality, Every Single Plate</li>
+        <li><i class="fa-solid fa-circle-check"></i> Fresh Ingredients Sourced Daily</li>
+        <li><i class="fa-solid fa-circle-check"></i> An Unmatched Fine Dining Experience</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Why Choose Us ================= -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow center"><i class="fa-solid fa-gem"></i> Why Royal Spice</p>
+      <h2 class="section-title">Why Choose <span class="text-gold">Us</span></h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal" data-anim="up" data-delay="0">
+        <div class="why-icon"><i class="fa-solid fa-medal"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Every ingredient and every plate held to a five-star standard, without compromise.</p>
+      </div>
+      <div class="why-card reveal" data-anim="up" data-delay="1">
+        <div class="why-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>Fresh Food</h3>
+        <p>Produce and spices sourced fresh each morning &mdash; nothing frozen, nothing rushed.</p>
+      </div>
+      <div class="why-card reveal" data-anim="up" data-delay="2">
+        <div class="why-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <h3>Luxury Dining</h3>
+        <p>Gilded interiors, candlelight, and curated ambience for an unforgettable evening.</p>
+      </div>
+      <div class="why-card reveal" data-anim="up" data-delay="0">
+        <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Fast Service</h3>
+        <p>Attentive, well-trained staff who anticipate every need before you ask.</p>
+      </div>
+      <div class="why-card reveal" data-anim="up" data-delay="1">
+        <div class="why-icon"><i class="fa-solid fa-hat-chef"></i></div>
+        <h3>Experienced Chefs</h3>
+        <p>Led by master chefs with decades of experience in royal and modern cuisine.</p>
+      </div>
+      <div class="why-card reveal" data-anim="up" data-delay="2">
+        <div class="why-icon"><i class="fa-solid fa-tags"></i></div>
+        <h3>Affordable Price</h3>
+        <p>A five-star experience priced for guests to return to again and again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Menu ================= -->
+<section class="menu-section" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow center"><i class="fa-solid fa-utensils"></i> Curated by Our Chefs</p>
+      <h2 class="section-title">Our Popular <span class="text-gold">Menu</span></h2>
+      <p class="section-sub">A royal spread &mdash; from paneer classics to biryanis, wok specialties, and desserts.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-cat="veg">Veg Specials</button>
+      <button class="menu-tab" data-cat="nonveg">Non-Veg &amp; Biryani</button>
+      <button class="menu-tab" data-cat="chinese">Chinese Wok</button>
+      <button class="menu-tab" data-cat="breads">Breads &amp; Dal</button>
+      <button class="menu-tab" data-cat="desserts">Desserts &amp; Drinks</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <!-- Veg -->
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=800&auto=format&fit=crop" alt="Paneer Butter Masala">
+          <span class="menu-tag">Bestseller</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Paneer Butter Masala</h3><span class="price">AED 42</span></div>
+          <p>Cottage cheese cubes in a velvety tomato-butter gravy, finished with cream.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800&auto=format&fit=crop" alt="Shahi Paneer">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Shahi Paneer</h3><span class="price">AED 44</span></div>
+          <p>Royal cashew-cream gravy simmered with saffron and warm whole spices.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop" alt="Paneer Kadai">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Paneer Kadai</h3><span class="price">AED 43</span></div>
+          <p>Wok-tossed paneer with bell peppers in a coarsely-ground kadai masala.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=800&auto=format&fit=crop" alt="Paneer Do Pyaza">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Paneer Do Pyaza</h3><span class="price">AED 43</span></div>
+          <p>Double onion masala with soft paneer, a classic North Indian favorite.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=800&auto=format&fit=crop" alt="Paneer Chilli">
+          <span class="menu-tag">Spicy</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Paneer Chilli</h3><span class="price">AED 40</span></div>
+          <p>Crispy paneer tossed in a tangy Indo-Chinese chilli-garlic sauce.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="veg">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=800&auto=format&fit=crop" alt="Dal Makhani">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Dal Makhani</h3><span class="price">AED 35</span></div>
+          <p>Black lentils, slow-simmered overnight with butter and smoked spice.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <!-- Non-Veg / Biryani -->
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1633945274309-2a621f0e0122?q=80&w=800&auto=format&fit=crop" alt="Chicken Biryani">
+          <span class="menu-tag">Signature</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Chicken Biryani</h3><span class="price">AED 48</span></div>
+          <p>Dum-sealed basmati layered with saffron chicken and fried onions.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1701579231378-3726490a407b?q=80&w=800&auto=format&fit=crop" alt="Mutton Biryani">
+          <span class="menu-tag">Signature</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Mutton Biryani</h3><span class="price">AED 58</span></div>
+          <p>Tender mutton, long-grain rice, and a dum-cooked blend of royal spices.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=800&auto=format&fit=crop" alt="Chicken Tikka">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Chicken Tikka</h3><span class="price">AED 39</span></div>
+          <p>Charcoal tandoor-grilled chicken, marinated in yogurt and warm spice.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=800&auto=format&fit=crop" alt="Butter Chicken">
+          <span class="menu-tag">Bestseller</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Butter Chicken</h3><span class="price">AED 46</span></div>
+          <p>Tandoor-charred chicken finished in a rich tomato-butter gravy.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1626200924133-c5deb6b93b32?q=80&w=800&auto=format&fit=crop" alt="Chicken Chilli">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Chicken Chilli</h3><span class="price">AED 44</span></div>
+          <p>Wok-fried chicken in a bold chilli-soy glaze with peppers and onion.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=800&auto=format&fit=crop" alt="Tandoori Chicken">
+          <span class="menu-tag">Signature</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Tandoori Chicken</h3><span class="price">AED 49</span></div>
+          <p>Whole leg pieces, slow-roasted in the clay tandoor to smoky perfection.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=800&auto=format&fit=crop" alt="Fish Fry">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Fish Fry</h3><span class="price">AED 52</span></div>
+          <p>Ajwain-crusted fish, shallow-fried golden with a citrus-spice rub.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="nonveg" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Mutton Kebab">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Mutton Kebab</h3><span class="price">AED 55</span></div>
+          <p>Charcoal-smoked minced mutton kebabs with a blend of 20 spices.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <!-- Chinese -->
+      <article class="menu-card" data-cat="chinese" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" alt="Veg Fried Rice">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Veg Fried Rice</h3><span class="price">AED 32</span></div>
+          <p>Wok-tossed rice with seasonal vegetables and light soy seasoning.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="chinese" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop" alt="Hakka Noodles">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Hakka Noodles</h3><span class="price">AED 34</span></div>
+          <p>Stir-fried noodles with crisp vegetables in a classic Hakka style.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="chinese" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop" alt="Veg Manchurian">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Veg Manchurian</h3><span class="price">AED 33</span></div>
+          <p>Crisp vegetable dumplings in a glossy garlic-soy Manchurian sauce.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <!-- Breads & Dal -->
+      <article class="menu-card" data-cat="breads" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1626132647523-66d3ed3d99c6?q=80&w=800&auto=format&fit=crop" alt="Garlic Naan">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Garlic Naan</h3><span class="price">AED 12</span></div>
+          <p>Hand-stretched tandoor bread, brushed with roasted garlic and butter.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="breads" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop" alt="Butter Naan">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Butter Naan</h3><span class="price">AED 10</span></div>
+          <p>Soft leavened bread, finished with a generous brush of clarified butter.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="breads" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=800&auto=format&fit=crop" alt="Dal Makhani bread pairing">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Dal Makhani</h3><span class="price">AED 35</span></div>
+          <p>Our signature slow-cooked black lentils, best paired with fresh naan.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <!-- Desserts & Drinks -->
+      <article class="menu-card" data-cat="desserts" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1666190092208-2d3f5f434a3e?q=80&w=800&auto=format&fit=crop" alt="Gulab Jamun">
+          <span class="menu-tag">Chef's Pick</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Gulab Jamun</h3><span class="price">AED 18</span></div>
+          <p>Warm milk-solid dumplings soaked in saffron-cardamom syrup.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="desserts" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=800&auto=format&fit=crop" alt="Ice Cream">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Ice Cream</h3><span class="price">AED 20</span></div>
+          <p>Rotating selection of house-churned flavors, served table-side.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="desserts" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800&auto=format&fit=crop" alt="Cold Drinks">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Cold Drinks</h3><span class="price">AED 14</span></div>
+          <p>A curated selection of soft drinks, served ice-cold.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+      <article class="menu-card" data-cat="desserts" style="display:none">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?q=80&w=800&auto=format&fit=crop" alt="Fresh Lime Soda">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top"><h3>Fresh Lime Soda</h3><span class="price">AED 15</span></div>
+          <p>Freshly squeezed lime, soda, and a touch of rock salt or sugar.</p>
+          <button class="btn btn-order ripple"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Gallery ================= -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow center"><i class="fa-solid fa-images"></i> Inside Royal Spice</p>
+      <h2 class="section-title">Our <span class="text-gold">Gallery</span></h2>
+    </div>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item item-1 reveal" data-anim="up">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=900&auto=format&fit=crop" alt="Luxury restaurant interior">
+      <div class="gallery-overlay"><span>Luxury Interior</span></div>
+    </div>
+    <div class="gallery-item item-2 reveal" data-anim="up" data-delay="1">
+      <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=900&auto=format&fit=crop" alt="Food photography close up">
+      <div class="gallery-overlay"><span>Food Photography</span></div>
+    </div>
+    <div class="gallery-item item-3 reveal" data-anim="up" data-delay="2">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=900&auto=format&fit=crop" alt="Chef cooking in the kitchen">
+      <div class="gallery-overlay"><span>Chef At Work</span></div>
+    </div>
+    <div class="gallery-item item-4 reveal" data-anim="up" data-delay="1">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=900&auto=format&fit=crop" alt="Elegant dining area">
+      <div class="gallery-overlay"><span>Dining Area</span></div>
+    </div>
+    <div class="gallery-item item-5 reveal" data-anim="up" data-delay="2">
+      <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?q=80&w=900&auto=format&fit=crop" alt="Family dining together">
+      <div class="gallery-overlay"><span>Family Dining</span></div>
+    </div>
+    <div class="gallery-item item-6 reveal" data-anim="up" data-delay="3">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=900&auto=format&fit=crop" alt="Restaurant at night">
+      <div class="gallery-overlay"><span>Night View</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Chef ================= -->
+<section class="chef" id="chef">
+  <div class="container chef-grid">
+    <div class="chef-media reveal" data-anim="left">
+      <div class="glass-frame">
+        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=900&auto=format&fit=crop" alt="Master Chef of Royal Spice Restaurant">
+      </div>
+    </div>
+    <div class="chef-copy reveal" data-anim="right">
+      <p class="eyebrow"><i class="fa-solid fa-hat-chef"></i> Meet Our Master Chef</p>
+      <h2 class="section-title">Chef <span class="text-gold">Arjun Rathore</span></h2>
+      <p class="chef-role">Executive Head Chef &mdash; 18 Years of Experience</p>
+      <p class="about-text">Trained in the royal kitchens of Rajasthan and refined across five-star kitchens in Dubai, Chef Arjun leads Royal Spice with an obsession for balance &mdash; between heat and cream, smoke and citrus, tradition and invention.</p>
+      <div class="chef-awards">
+        <div class="award"><i class="fa-solid fa-trophy"></i><span>Gulf Culinary Excellence Award, 2022</span></div>
+        <div class="award"><i class="fa-solid fa-trophy"></i><span>Best Fine Dining Chef, Dubai Food Guild 2021</span></div>
+        <div class="award"><i class="fa-solid fa-trophy"></i><span>Featured in Dubai Gourmet Weekly</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Stats ================= -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-box reveal" data-anim="up" data-delay="0">
+      <span class="stat-num" data-count="5000">0</span><span class="stat-plus">+</span>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-box reveal" data-anim="up" data-delay="1">
+      <span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span>
+      <p>Signature Dishes</p>
+    </div>
+    <div class="stat-box reveal" data-anim="up" data-delay="2">
+      <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat-box reveal" data-anim="up" data-delay="3">
+      <span class="stat-num" data-count="4.9" data-decimal="true">0</span>
+      <p>Average Rating</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Reviews ================= -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow center"><i class="fa-solid fa-quote-left"></i> Testimonials</p>
+      <h2 class="section-title">What Our <span class="text-gold">Guests Say</span></h2>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal" data-anim="up" data-delay="0">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"The Mutton Biryani was unbelievable &mdash; every grain perfectly separate, deeply flavorful. Best in Dubai, hands down."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=150&auto=format&fit=crop" alt="Guest Ahmed Al Farsi">
+          <div><h4>Ahmed Al Farsi</h4><span>Dubai, UAE</span></div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-anim="up" data-delay="1">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Booked the private section for our anniversary. Service was flawless and the Shahi Paneer was pure comfort."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop" alt="Guest Sarah Thompson">
+          <div><h4>Sarah Thompson</h4><span>Return Guest</span></div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-anim="up" data-delay="2">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Ambience feels like a palace. The gold detailing, the chandeliers, the Butter Chicken &mdash; everything is deliberate and elegant."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Guest Rohan Mehta">
+          <div><h4>Rohan Mehta</h4><span>Food Blogger</span></div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-anim="up" data-delay="0">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"The Hakka Noodles and Chilli Paneer combo is unreal. Fast service too, even on a packed Friday night."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=150&auto=format&fit=crop" alt="Guest Elena Petrova">
+          <div><h4>Elena Petrova</h4><span>Dubai Marina</span></div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-anim="up" data-delay="1">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Chef Arjun came out to greet our table personally. That kind of care is rare, and the food backs it up completely."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=150&auto=format&fit=crop" alt="Guest David Chen">
+          <div><h4>David Chen</h4><span>Business Bay</span></div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-anim="up" data-delay="2">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Reserved online in under a minute, seated on time, and the Gulab Jamun at the end was the perfect finish."</p>
+        <div class="review-author">
+          <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=150&auto=format&fit=crop" alt="Guest Fatima Al Zaabi">
+          <div><h4>Fatima Al Zaabi</h4><span>Jumeirah</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Reservation ================= -->
+<section class="reservation" id="reservation">
+  <div class="container reservation-grid">
+    <div class="reservation-copy reveal" data-anim="left">
+      <p class="eyebrow"><i class="fa-solid fa-calendar-check"></i> Reserve Your Table</p>
+      <h2 class="section-title">Book Your <span class="text-gold">Royal Evening</span></h2>
+      <p class="section-sub">Reserve online and our concierge will confirm your table within the hour.</p>
+      <div class="reservation-info">
+        <div><i class="fa-solid fa-clock"></i><span>Open Daily, 12:00 PM &ndash; 1:00 AM</span></div>
+        <div><i class="fa-solid fa-phone"></i><span>+971 50 123 4567</span></div>
+      </div>
+    </div>
+
+    <form class="glass-form reveal" data-anim="right" id="reservationForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" id="rname" name="rname" required placeholder=" ">
+          <label for="rname">Full Name</label>
+          <span class="form-error" data-for="rname">Please enter your name</span>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="rphone" name="rphone" required placeholder=" ">
+          <label for="rphone">Phone Number</label>
+          <span class="form-error" data-for="rphone">Please enter a valid phone number</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="remail" name="remail" required placeholder=" ">
+        <label for="remail">Email Address</label>
+        <span class="form-error" data-for="remail">Please enter a valid email</span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <input type="number" id="rguests" name="rguests" min="1" max="20" required placeholder=" ">
+          <label for="rguests">Number of Guests</label>
+          <span class="form-error" data-for="rguests">Please enter number of guests</span>
+        </div>
+        <div class="form-group">
+          <input type="date" id="rdate" name="rdate" required placeholder=" ">
+          <label for="rdate">Date</label>
+          <span class="form-error" data-for="rdate">Please select a date</span>
+        </div>
+        <div class="form-group">
+          <input type="time" id="rtime" name="rtime" required placeholder=" ">
+          <label for="rtime">Time</label>
+          <span class="form-error" data-for="rtime">Please select a time</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea id="rmessage" name="rmessage" rows="3" placeholder=" "></textarea>
+        <label for="rmessage">Special Requests (optional)</label>
+      </div>
+
+      <button type="submit" class="btn btn-gold form-submit ripple">
+        <span><i class="fa-solid fa-champagne-glasses"></i> Book Now</span>
+      </button>
+
+      <p class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thank you. Your reservation request has been received &mdash; our concierge will confirm shortly.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= Contact ================= -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-card glass reveal" data-anim="up" data-delay="0">
+      <i class="fa-solid fa-location-dot"></i>
+      <h3>Address</h3>
+      <p>Sheikh Zayed Road, Downtown Dubai, Dubai, UAE</p>
+    </div>
+    <div class="contact-card glass reveal" data-anim="up" data-delay="1">
+      <i class="fa-solid fa-phone"></i>
+      <h3>Phone</h3>
+      <p><a href="tel:+971501234567">+971 50 123 4567</a></p>
+    </div>
+    <div class="contact-card glass reveal" data-anim="up" data-delay="2">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>Email</h3>
+      <p><a href="mailto:royalspice@email.com">royalspice@email.com</a></p>
+    </div>
+    <div class="contact-card glass reveal" data-anim="up" data-delay="3">
+      <i class="fa-solid fa-clock"></i>
+      <h3>Opening Hours</h3>
+      <p>Daily &mdash; 12:00 PM to 1:00 AM</p>
+    </div>
+  </div>
+
+  <div class="map-wrap">
+    <iframe
+      src="https://maps.google.com/maps?q=Sheikh%20Zayed%20Road%20Downtown%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="Royal Spice Restaurant location map, Dubai">
+    </iframe>
+    <div class="map-fade"></div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <svg viewBox="0 0 120 120" class="brand-crest">
+          <path class="crest-crown" d="M30 46 L38 26 L50 42 L60 20 L70 42 L82 26 L90 46 Z"/>
+          <circle cx="60" cy="66" r="30" class="crest-circle"/>
+          <text x="60" y="75" class="crest-letters">RS</text>
+        </svg>
+        <span class="brand-text">Royal <em>Spice</em></span>
+      </a>
+      <p>Experience the Royal Taste &mdash; ultra-premium fine dining in the heart of Dubai.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#chef">Our Chef</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Restaurant</h4>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#contact">Private Dining</a>
+      <a href="#contact">Careers</a>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Seasonal menus and exclusive dinner events &mdash; straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Royal Spice Restaurant. All rights reserved.</p>
+    <p>Dubai, United Arab Emirates</p>
+  </div>
+</footer>
+
+<!-- ================= Floating WhatsApp ================= -->
+<a href="https://wa.me/971501234567?text=Hello%20Royal%20Spice%2C%20I%27d%20like%20to%20make%20a%20reservation."
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-pulse"></span>
+</a>
+
+<!-- ================= Back to Top ================= -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
